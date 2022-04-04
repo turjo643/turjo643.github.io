@@ -1,1 +1,197 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Tawhid Turjo-About</title>
+    <link rel="shortcut icon" href="images/Tiltle LOGO.svg">
+    <meta name="description" content="" />
+    <meta name="author" content="Tooplate" />
+    <!--CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Additional CSS Files -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/tooplate-style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+    <link rel="stylesheet" href="assets/css/image-style.css" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+  </head>
+  <body>
+
+
+
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="images/Tiltle LOGO.svg" alt="Logo of Tawhid Turjo" /></a>
+            </div>
+            <div class="author-content">
+              <h4>Tawhid Turjo</h4>
+              <span>PERSONAL WEB PAGE</span>
+            </div>
+            <nav class="main-nav">
+              <ul>
+                <li  class="active"><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Find & Contact.html">Find & Contact</a></li>
+              </ul>
+            </nav>
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+                  <a href="https://www.facebook.com/turjo.643"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/turjo643"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/turjo-643/"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/turjo.643/"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="https://github.com/turjo643"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/channel/UCoSxqa0rei0Oy4Ot5Dnf_Yg"><i class="fab fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright-text">
+              <p>Copyright 2022 Tawhid Turjo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section about-me" >
+        <div class="container">
+        <div class="top-header">
+        	<img src="images/cover.jpg" alt="" />
+        </div>
+          <div class="section-heading">
+          
+            <h2>Tawhidur Rahman Turjo</h2>
+            <div class="line-dec"></div>
+            <span>It`s just a beginning try. So, please don`t judge it.</span>
+          </div>
+          <div class="right-image-post">
+            <div class="row">
+ 
+              <div class="col-md-8">
+                <div class="left-text">
+                  <h4>About Me</h4>
+                  <p>Just new here.I will try to upgrade this site day by day. Please stay connected with me.</p>
+                  
+                  <div class="white-button">
+                    <a href="About.html">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="right-image">
+                  <img src="images/About.png" alt="" />
+                </div>
+
+              </div>
+          </div>
+          <div class="left-image-post">
+            <div class="row">
+            
+              <div class="col-md-4">
+                <div class="left-image">
+                  <img src="images/find.svg" alt="" />
+                </div>
+              </div>
+              
+              <div class="col-md-8">
+                <div class="right-text">
+                  <h4>Find & Contact</h4>
+                  <p>Using my social links you can find me. You can also contact me from here if you want.</p>
+                  
+                  <div class="white-button">
+                    <a href="Find & Contact.html">Read More</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Scripts -->
+  <!-- JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+    //according to loftblog tut
+    $(".main-menu li:first").addClass("active");
+
+    var showSection = function showSection(section, isAnimate) {
+      var direction = section.replace(/#/, ""),
+        reqSection = $(".section").filter(
+          '[data-section="' + direction + '"]'
+        ),
+        reqSectionPos = reqSection.offset().top - 0;
+
+      if (isAnimate) {
+        $("body, html").animate(
+          {
+            scrollTop: reqSectionPos
+          },
+          800
+        );
+      } else {
+        $("body, html").scrollTop(reqSectionPos);
+      }
+    };
+
+    var checkSection = function checkSection() {
+      $(".section").each(function() {
+        var $this = $(this),
+          topEdge = $this.offset().top - 80,
+          bottomEdge = topEdge + $this.height(),
+          wScroll = $(window).scrollTop();
+        if (topEdge < wScroll && bottomEdge > wScroll) {
+          var currentId = $this.data("section"),
+            reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+          reqLink
+            .closest("li")
+            .addClass("active")
+            .siblings()
+            .removeClass("active");
+        }
+      });
+    };
+
+    $(".main-menu").on("click", "a", function(e) {
+      e.preventDefault();
+      showSection($(this).attr("href"), true);
+    });
+
+    $(window).scroll(function() {
+      checkSection();
+    });
+  </script>
+
+      <a class="gotopbtn" href="#"> <img src="images/Up.svg"></i> </a>
+
+  </body>
+</html>
